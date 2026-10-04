@@ -1,0 +1,3574 @@
+{
+  "started_utc": "2026-10-04T09:06:55.311993+00:00",
+  "checks": {
+    "pubmed_eutils": {
+      "ok": true,
+      "status": 200,
+      "latency_s": 2.381,
+      "payload": {
+        "header": {
+          "type": "esearch",
+          "version": "0.3"
+        },
+        "esearchresult": {
+          "count": "68035",
+          "retmax": "5",
+          "retstart": "0",
+          "idlist": [
+            "42828344",
+            "42825486",
+            "42820104",
+            "42822046",
+            "42822040"
+          ],
+          "translationset": [],
+          "querytranslation": "\"surgery\"[Title/Abstract] AND \"randomized controlled trial\"[Publication Type]"
+        }
+      },
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=surgery%5BTitle/Abstract%5D%20AND%20randomized%20controlled%20trial%5Bpt%5D&retmode=json&retmax=5",
+      "probe_count": 68035,
+      "claim": "PubMed comprises >40M citations (NLM 2026)",
+      "verdict": "PASS live API reachable; count>0 confirms index non-empty"
+    },
+    "openalex": {
+      "ok": false,
+      "error": "The read operation timed out",
+      "latency_s": 22.977,
+      "url": "https://api.openalex.org/works?search=randomized%20controlled%20trial%20surgery&filter=from_publication_date:2024-01-01&per-page=5&mailto=benchmark@medical-trust.local"
+    },
+    "crossref": {
+      "ok": true,
+      "status": 200,
+      "latency_s": 7.826,
+      "payload": {
+        "status": "ok",
+        "message-type": "work-list",
+        "message-version": "1.0.0",
+        "message": {
+          "facets": {},
+          "total-results": 3411870,
+          "items": [
+            {
+              "indexed": {
+                "date-parts": [
+                  [
+                    2025,
+                    5,
+                    5
+                  ]
+                ],
+                "date-time": "2025-05-05T23:50:43Z",
+                "timestamp": 1746489043488
+              },
+              "reference-count": 0,
+              "publisher": "American Medical Association (AMA)",
+              "issue": "12",
+              "content-domain": {
+                "domain": [],
+                "crossmark-restriction": false
+              },
+              "short-container-title": [
+                "Arch Surg"
+              ],
+              "published-print": {
+                "date-parts": [
+                  [
+                    2009,
+                    12,
+                    21
+                  ]
+                ]
+              },
+              "DOI": "10.1001/archsurg.2009.217",
+              "type": "journal-article",
+              "created": {
+                "date-parts": [
+                  [
+                    2009,
+                    12,
+                    21
+                  ]
+                ],
+                "date-time": "2009-12-21T16:24:27Z",
+                "timestamp": 1261412667000
+              },
+              "page": "1132",
+              "source": "Crossref",
+              "is-referenced-by-count": 1,
+              "title": [
+                "Does Every Question Deserve a Randomized Controlled Trial?"
+              ],
+              "prefix": "10.1001",
+              "volume": "144",
+              "author": [
+                {
+                  "given": "Kirk",
+                  "family": "Ludwig",
+                  "sequence": "first",
+                  "affiliation": [],
+                  "role": [
+                    {
+                      "role": "author",
+                      "vocabulary": "crossref"
+                    }
+                  ]
+                }
+              ],
+              "member": "10",
+              "container-title": [
+                "Archives of Surgery"
+              ],
+              "language": "en",
+              "link": [
+                {
+                  "URL": "http://jamanetwork.com/journals/jamasurgery/fullarticle/405519",
+                  "content-type": "unspecified",
+                  "content-version": "vor",
+                  "intended-application": "similarity-checking"
+                }
+              ],
+              "deposited": {
+                "date-parts": [
+                  [
+                    2016,
+                    12,
+                    15
+                  ]
+                ],
+                "date-time": "2016-12-15T12:18:33Z",
+                "timestamp": 1481804313000
+              },
+              "score": 28.206593,
+              "resource": {
+                "primary": {
+                  "URL": "http://archsurg.jamanetwork.com/article.aspx?doi=10.1001/archsurg.2009.217"
+                }
+              },
+              "subtitle": [
+                "Comment on \u201cEndolaparoscopic Approach vs Conventional Open Surgery in the Treatment of Obstructing Left-Sided Colon Cancer: A Randomized Controlled Trial\u201d"
+              ],
+              "issued": {
+                "date-parts": [
+                  [
+                    2009,
+                    12,
+                    21
+                  ]
+                ]
+              },
+              "references-count": 0,
+              "journal-issue": {
+                "issue": "12",
+                "published-print": {
+                  "date-parts": [
+                    [
+                      2009,
+                      12,
+                      21
+                    ]
+                  ]
+                }
+              },
+              "URL": "https://doi.org/10.1001/archsurg.2009.217",
+              "ISSN": [
+                "0004-0010"
+              ],
+              "issn-type": [
+                {
+                  "value": "0004-0010",
+                  "type": "print"
+                }
+              ],
+              "published": {
+                "date-parts": [
+                  [
+                    2009,
+                    12,
+                    21
+                  ]
+                ]
+              }
+            },
+            {
+              "indexed": {
+                "date-parts": [
+                  [
+                    2026,
+                    5,
+                    4
+                  ]
+                ],
+                "date-time": "2026-05-04T00:03:42Z",
+                "timestamp": 1777853022649,
+                "version": "3.51.4"
+              },
+              "reference-count": 0,
+              "publisher": "SAGE Publications",
+              "issue": "2",
+              "license": [
+                {
+                  "start": {
+                    "date-parts": [
+                      [
+                        2024,
+                        11,
+                        13
+                      ]
+                    ],
+                    "date-time": "2024-11-13T00:00:00Z",
+                    "timestamp": 1731456000000
+                  },
+                  "content-version": "tdm",
+                  "delay-in-days": 0,
+                  "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+                }
+              ],
+              "content-domain": {
+                "domain": [
+                  "journals.sagepub.com"
+                ],
+                "crossmark-restriction": true
+              },
+              "short-container-title": [
+                "J Hand Surg Eur Vol"
+              ],
+              "published-print": {
+                "date-parts": [
+                  [
+                    2025,
+                    2
+                  ]
+                ]
+              },
+              "DOI": "10.1177/17531934241297612",
+              "type": "journal-article",
+              "created": {
+                "date-parts": [
+                  [
+                    2024,
+                    11,
+                    13
+                  ]
+                ],
+                "date-time": "2024-11-13T06:56:42Z",
+                "timestamp": 1731481002000
+              },
+              "page": "297-298",
+              "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+              "source": "Crossref",
+              "is-referenced-by-count": 0,
+              "title": [
+                "Highlights of hand surgery randomized controlled trials"
+              ],
+              "prefix": "10.1177",
+              "volume": "50",
+              "member": "179",
+              "published-online": {
+                "date-parts": [
+                  [
+                    2024,
+                    11,
+                    13
+                  ]
+                ]
+              },
+              "container-title": [
+                "Journal of Hand Surgery (European Volume)"
+              ],
+              "language": "en",
+              "link": [
+                {
+                  "URL": "https://journals.sagepub.com/doi/pdf/10.1177/17531934241297612",
+                  "content-type": "application/pdf",
+                  "content-version": "vor",
+                  "intended-application": "text-mining"
+                },
+                {
+                  "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/17531934241297612",
+                  "content-type": "application/xml",
+                  "content-version": "vor",
+                  "intended-application": "text-mining"
+                },
+                {
+                  "URL": "https://journals.sagepub.com/doi/pdf/10.1177/17531934241297612",
+                  "content-type": "unspecified",
+                  "content-version": "vor",
+                  "intended-application": "similarity-checking"
+                }
+              ],
+              "deposited": {
+                "date-parts": [
+                  [
+                    2026,
+                    4,
+                    29
+                  ]
+                ],
+                "date-time": "2026-04-29T22:46:58Z",
+                "timestamp": 1777502818000
+              },
+              "score": 27.847584,
+              "resource": {
+                "primary": {
+                  "URL": "https://journals.sagepub.com/doi/10.1177/17531934241297612"
+                }
+              },
+              "subtitle": [
+                "Randomized controlled trial highlights"
+              ],
+              "issued": {
+                "date-parts": [
+                  [
+                    2024,
+                    11,
+                    13
+                  ]
+                ]
+              },
+              "references-count": 0,
+              "journal-issue": {
+                "issue": "2",
+                "published-print": {
+                  "date-parts": [
+                    [
+                      2025,
+                      2
+                    ]
+                  ]
+                }
+              },
+              "alternative-id": [
+                "10.1177/17531934241297612"
+              ],
+              "URL": "https://doi.org/10.1177/17531934241297612",
+              "ISSN": [
+                "1753-1934",
+                "2043-6289"
+              ],
+              "issn-type": [
+                {
+                  "value": "1753-1934",
+                  "type": "print"
+                },
+                {
+                  "value": "2043-6289",
+                  "type": "electronic"
+                }
+              ],
+              "published": {
+                "date-parts": [
+                  [
+                    2024,
+                    11,
+                    13
+                  ]
+                ]
+              }
+            },
+            {
+              "indexed": {
+                "date-parts": [
+                  [
+                    2025,
+                    6,
+                    6
+                  ]
+                ],
+                "date-time": "2025-06-06T04:07:09Z",
+                "timestamp": 1749182829623,
+                "version": "3.41.0"
+              },
+              "reference-count": 0,
+              "publisher": "Pubtexto",
+              "issue": "1",
+              "content-domain": {
+                "domain": [],
+                "crossmark-restriction": false
+              },
+              "short-container-title": [
+                "IJSCP"
+              ],
+              "published-print": {
+                "date-parts": [
+                  [
+                    2022,
+                    2,
+                    26
+                  ]
+                ]
+              },
+              "DOI": "10.36266/ijscp/140f",
+              "type": "journal-article",
+              "created": {
+                "date-parts": [
+                  [
+                    2025,
+                    6,
+                    5
+                  ]
+                ],
+                "date-time": "2025-06-05T12:01:41Z",
+                "timestamp": 1749124901000
+              },
+              "page": "1-4",
+              "source": "Crossref",
+              "is-referenced-by-count": 0,
+              "title": [
+                "Nasobiliary Guided Laparoscopic Cholecystectomy Following Endoscopic Retrograde Cholangiopancreatography, Randomized Controlled Trial"
+              ],
+              "prefix": "10.36266",
+              "volume": "4",
+              "member": "21882",
+              "published-online": {
+                "date-parts": [
+                  [
+                    2022,
+                    2,
+                    26
+                  ]
+                ]
+              },
+              "container-title": [
+                "International Journal of Surgery and Clinical Practice"
+              ],
+              "original-title": [
+                "Nasobiliary Guided Laparoscopic Cholecystectomy Following Endoscopic Retrograde Cholangiopancreatography, Randomized Controlled Trial"
+              ],
+              "deposited": {
+                "date-parts": [
+                  [
+                    2025,
+                    6,
+                    5
+                  ]
+                ],
+                "date-time": "2025-06-05T12:04:02Z",
+                "timestamp": 1749125042000
+              },
+              "score": 27.821293,
+              "resource": {
+                "primary": {
+                  "URL": "https://www.pubtexto.com/pdf/?nasobiliary-guided-laparoscopic-cholecystectomy-following-endoscopic-retrograde-cholangiopancreatography-randomized-controlled-tri"
+                }
+              },
+              "issued": {
+                "date-parts": [
+                  [
+                    2022,
+                    2,
+                    26
+                  ]
+                ]
+              },
+              "references-count": 0,
+              "journal-issue": {
+                "issue": "1",
+                "published-online": {
+                  "date-parts": [
+                    [
+                      2022,
+                      2,
+                      26
+                    ]
+                  ]
+                },
+                "published-print": {
+                  "date-parts": [
+                    [
+                      2022,
+                      2,
+                      26
+                    ]
+                  ]
+                }
+              },
+              "URL": "https://doi.org/10.36266/ijscp/140f",
+              "published": {
+                "date-parts": [
+                  [
+                    2022,
+                    2,
+                    26
+                  ]
+                ]
+              }
+            }
+          ],
+          "items-per-page": 3,
+          "query": {
+            "start-index": 0,
+            "search-terms": "surgery randomized controlled trial"
+          }
+        }
+      },
+      "url": "https://api.crossref.org/works?query=surgery+randomized+controlled+trial&rows=3&mailto=benchmark@medical-trust.local",
+      "total_results": 3411870,
+      "verdict": "PASS"
+    },
+    "clinicaltrials_gov": {
+      "ok": true,
+      "status": 200,
+      "latency_s": 4.744,
+      "payload": {
+        "totalCount": 4068,
+        "studies": [
+          {
+            "protocolSection": {
+              "identificationModule": {
+                "nctId": "NCT01601756",
+                "orgStudyIdInfo": {
+                  "id": "AAG-I-H-0917"
+                },
+                "organization": {
+                  "fullName": "Charite University, Berlin, Germany",
+                  "class": "OTHER"
+                },
+                "briefTitle": "Joint Line Reconstruction in Navigated Total Knee Arthroplasty Revision",
+                "officialTitle": "Joint Line Reconstruction in Navigated Total Knee Arthroplasty Revision",
+                "acronym": "NavRevKnie"
+              },
+              "statusModule": {
+                "statusVerifiedDate": "2012-05",
+                "overallStatus": "UNKNOWN",
+                "lastKnownStatus": "RECRUITING",
+                "expandedAccessInfo": {
+                  "hasExpandedAccess": false
+                },
+                "startDateStruct": {
+                  "date": "2011-09"
+                },
+                "primaryCompletionDateStruct": {
+                  "date": "2012-12",
+                  "type": "ESTIMATED"
+                },
+                "completionDateStruct": {
+                  "date": "2012-12",
+                  "type": "ESTIMATED"
+                },
+                "studyFirstSubmitDate": "2012-05-14",
+                "studyFirstSubmitQcDate": "2012-05-16",
+                "studyFirstPostDateStruct": {
+                  "date": "2012-05-18",
+                  "type": "ESTIMATED"
+                },
+                "lastUpdateSubmitDate": "2012-05-16",
+                "lastUpdatePostDateStruct": {
+                  "date": "2012-05-18",
+                  "type": "ESTIMATED"
+                }
+              },
+              "sponsorCollaboratorsModule": {
+                "responsibleParty": {
+                  "type": "PRINCIPAL_INVESTIGATOR",
+                  "investigatorFullName": "Georg Matziolis",
+                  "investigatorTitle": "Professor",
+                  "investigatorAffiliation": "Charite University, Berlin, Germany"
+                },
+                "leadSponsor": {
+                  "name": "Charite University, Berlin, Germany",
+                  "class": "OTHER"
+                },
+                "collaborators": [
+                  {
+                    "name": "Aesculap AG",
+                    "class": "INDUSTRY"
+                  }
+                ]
+              },
+              "oversightModule": {
+                "oversightHasDmc": true
+              },
+              "descriptionModule": {
+                "briefSummary": "Hypothesis: navigated revision total knee arthroplasty results in a more precise reconstruction of preoperatively planned joint line than conventional revision total knee arthroplasty (rTKA)."
+              },
+              "conditionsModule": {
+                "conditions": [
+                  "Revision Total Knee Arthroplasty Because of",
+                  "Loosening",
+                  "Instability",
+                  "Impingement",
+                  "or Other Reasons Accepted as Indications for TKA Exchange.",
+                  "The Focus is to Determine the Precision of Joint Line Restoration in Navigated vs. Conventional Revision Total Knee Arthroplasty"
+                ],
+                "keywords": [
+                  "revision knee arthroplasty",
+                  "navigation",
+                  "joint line"
+                ]
+              },
+              "designModule": {
+                "studyType": "INTERVENTIONAL",
+                "phases": [
+                  "NA"
+                ],
+                "designInfo": {
+                  "allocation": "RANDOMIZED",
+                  "interventionModel": "PARALLEL",
+                  "primaryPurpose": "TREATMENT",
+                  "maskingInfo": {
+                    "masking": "DOUBLE",
+                    "whoMasked": [
+                      "INVESTIGATOR",
+                      "OUTCOMES_ASSESSOR"
+                    ]
+                  }
+                },
+                "enrollmentInfo": {
+                  "count": 40,
+                  "type": "ESTIMATED"
+                }
+              },
+              "armsInterventionsModule": {
+                "armGroups": [
+                  {
+                    "label": "navigated revision total knee arthroplasty",
+                    "type": "EXPERIMENTAL",
+                    "description": "revision total knee arthroplasty with the aid of a navigation system",
+                    "interventionNames": [
+                      "Device: navigated revision knee arthroplasty"
+                    ]
+                  },
+                  {
+                    "label": "conventional revision knee arthroplasty",
+                    "type": "ACTIVE_COMPARATOR",
+                    "description": "revision knee arthroplasty using conventional instruments",
+                    "interventionNames": [
+                      "Device: conventional revision knee arthroplasty"
+                    ]
+                  }
+                ],
+                "interventions": [
+                  {
+                    "type": "DEVICE",
+                    "name": "navigated revision knee arthroplasty",
+                    "description": "revision knee arthroplasty with the aid of a navigation system the navigation system is the Orthopilot System with a software specifically dedicated for revision operations (TKR 1.0). The system is from Aesculap AG (Tuttlingen).",
+                    "armGroupLabels": [
+                      "navigated revision total knee arthroplasty"
+                    ]
+                  },
+                  {
+                    "type": "DEVICE",
+                    "name": "conventional revision knee arthroplasty",
+                    "description": "revision knee arthroplasty using conventional instruments",
+                    "armGroupLabels": [
+                      "conventional revision knee arthroplasty"
+                    ]
+                  }
+                ]
+              },
+              "outcomesModule": {
+                "primaryOutcomes": [
+                  {
+                    "measure": "Restoration of Joint Line",
+                    "description": "Difference between preoperatively planned and postoperatively achieved joint line",
+                    "timeFrame": "postoperatively (6 to 12 weeks after operation, we expect a mean of 9 weeks)"
+                  }
+                ]
+              },
+              "eligibilityModule": {
+                "eligibilityCriteria": "Inclusion Criteria:\n\n* indication for revision knee arthroplasty",
+                "healthyVolunteers": true,
+                "sex": "ALL",
+                "minimumAge": "18 Years",
+                "stdAges": [
+                  "ADULT",
+                  "OLDER_ADULT"
+                ]
+              },
+              "contactsLocationsModule": {
+                "centralContacts": [
+                  {
+                    "name": "Georg Matziolis, MD",
+                    "role": "CONTACT",
+                    "phone": "+49 30 450 615093",
+                    "email": "georg.matziolis@charite.de"
+                  }
+                ],
+                "locations": [
+                  {
+                    "facility": "Orthopaedic Department, Charit\u00e9 - University Medicine Berlin",
+                    "status": "RECRUITING",
+                    "city": "Berlin",
+                    "state": "State of Berlin",
+                    "zip": "10117",
+                    "country": "Germany",
+                    "contacts": [
+                      {
+                        "name": "Georg Matziolis, MD",
+                        "role": "CONTACT",
+                        "phone": "+49 30 450 615093",
+                        "email": "georg.matziolis@charite.de"
+                      },
+                      {
+                        "name": "Georg Matziolis, MD",
+                        "role": "PRINCIPAL_INVESTIGATOR"
+                      }
+                    ],
+                    "geoPoint": {
+                      "lat": 52.52437,
+                      "lon": 13.41053
+                    }
+                  }
+                ]
+              }
+            },
+            "derivedSection": {
+              "miscInfoModule": {
+                "versionHolder": "2026-10-02"
+              }
+            },
+            "hasResults": false
+          },
+          {
+            "protocolSection": {
+              "identificationModule": {
+                "nctId": "NCT01203072",
+                "orgStudyIdInfo": {
+                  "id": "DU176b-04"
+                },
+                "organization": {
+                  "fullName": "Daiichi Sankyo",
+                  "class": "INDUSTRY"
+                },
+                "briefTitle": "A Phase 2b Study of DU-176b, Prevention of Venous Thromboembolism in Patients After Total Knee Arthroplasty",
+                "officialTitle": "A Phase 2b, Randomized, Double-Blind, Multi-Dose Efficacy, Safety and Dose-finding Study of the Oral Factor Xa Inhibitor DU-176b Compared With Placebo for Prevention of Venous Thromboembolism in Patients After Total Knee Arthroplasty (STARS J-1)"
+              },
+              "statusModule": {
+                "statusVerifiedDate": "2015-01",
+                "overallStatus": "COMPLETED",
+                "expandedAccessInfo": {
+                  "hasExpandedAccess": false
+                },
+                "startDateStruct": {
+                  "date": "2006-07"
+                },
+                "primaryCompletionDateStruct": {
+                  "date": "2007-09",
+                  "type": "ACTUAL"
+                },
+                "completionDateStruct": {
+                  "date": "2008-07",
+                  "type": "ACTUAL"
+                },
+                "studyFirstSubmitDate": "2010-09-14",
+                "studyFirstSubmitQcDate": "2010-09-14",
+                "studyFirstPostDateStruct": {
+                  "date": "2010-09-16",
+                  "type": "ESTIMATED"
+                },
+                "resultsFirstSubmitDate": "2015-01-15",
+                "resultsFirstSubmitQcDate": "2015-01-15",
+                "resultsFirstPostDateStruct": {
+                  "date": "2015-01-26",
+                  "type": "ESTIMATED"
+                },
+                "lastUpdateSubmitDate": "2019-02-08",
+                "lastUpdatePostDateStruct": {
+                  "date": "2019-02-25",
+                  "type": "ACTUAL"
+                }
+              },
+              "sponsorCollaboratorsModule": {
+                "responsibleParty": {
+                  "type": "SPONSOR"
+                },
+                "leadSponsor": {
+                  "name": "Daiichi Sankyo Co., Ltd.",
+                  "class": "INDUSTRY"
+                }
+              },
+              "oversightModule": {
+                "oversightHasDmc": true
+              },
+              "descriptionModule": {
+                "briefSummary": "The objective of this study is to assess the efficacy, safety and dose-response relationship of DU-176b compared with placebo for the prevention of venous thromboembolism in patients after elective total knee arthroplasty."
+              },
+              "conditionsModule": {
+                "conditions": [
+                  "Venous Thromboembolism",
+                  "Deep Vein Thrombosis",
+                  "Total Knee Arthroplasty"
+                ],
+                "keywords": [
+                  "prevention",
+                  "venous thromboembolism",
+                  "edoxaban",
+                  "factor Xa"
+                ]
+              },
+              "designModule": {
+                "studyType": "INTERVENTIONAL",
+                "phases": [
+                  "PHASE2"
+                ],
+                "designInfo": {
+                  "allocation": "RANDOMIZED",
+                  "interventionModel": "PARALLEL",
+                  "primaryPurpose": "PREVENTION",
+                  "maskingInfo": {
+                    "masking": "QUADRUPLE",
+                    "whoMasked": [
+                      "PARTICIPANT",
+                      "CARE_PROVIDER",
+                      "INVESTIGATOR",
+                      "OUTCOMES_ASSESSOR"
+                    ]
+                  }
+                },
+                "enrollmentInfo": {
+                  "count": 523,
+                  "type": "ACTUAL"
+                }
+              },
+              "armsInterventionsModule": {
+                "armGroups": [
+                  {
+                    "label": "DU-176b 5 mg",
+                    "type": "EXPERIMENTAL",
+                    "interventionNames": [
+                      "Drug: DU-176b"
+                    ]
+                  },
+                  {
+                    "label": "DU-176b 15 mg",
+                    "type": "EXPERIMENTAL",
+                    "interventionNames": [
+                      "Drug: DU-176b"
+                    ]
+                  },
+                  {
+                    "label": "DU-176b 30 mg",
+                    "type": "EXPERIMENTAL",
+                    "interventionNames": [
+                      "Drug: DU-176b"
+                    ]
+                  },
+                  {
+                    "label": "DU-176b 60 mg",
+                    "type": "EXPERIMENTAL",
+                    "interventionNames": [
+                      "Drug: DU-176b"
+                    ]
+                  },
+                  {
+                    "label": "Placebo",
+                    "type": "PLACEBO_COMPARATOR",
+                    "interventionNames": [
+                      "Drug: Placebo"
+                    ]
+                  }
+                ],
+                "interventions": [
+                  {
+                    "type": "DRUG",
+                    "name": "DU-176b",
+                    "description": "DU-176b 5mg tablets oral, once daily for 2 weeks",
+                    "armGroupLabels": [
+                      "DU-176b 5 mg"
+                    ],
+                    "otherNames": [
+                      "edoxaban"
+                    ]
+                  },
+                  {
+                    "type": "DRUG",
+                    "name": "DU-176b",
+                    "description": "DU-176b 15mg tablets, oral once daily for 2 weeks",
+                    "armGroupLabels": [
+                      "DU-176b 15 mg"
+                    ],
+                    "otherNames": [
+                      "edoxaban"
+                    ]
+                  },
+                  {
+                    "type": "DRUG",
+                    "name": "DU-176b",
+                    "description": "DU-176b 30 mg tablets, oral, once daily for 2 weeks",
+                    "armGroupLabels": [
+                      "DU-176b 30 mg"
+                    ],
+                    "otherNames": [
+                      "edoxaban"
+                    ]
+                  },
+                  {
+                    "type": "DRUG",
+                    "name": "DU-176b",
+                    "description": "DU-176b 60 mg tablets, oral, once daily for 2 weeks",
+                    "armGroupLabels": [
+                      "DU-176b 60 mg"
+                    ],
+                    "otherNames": [
+                      "edoxaban"
+                    ]
+                  },
+                  {
+                    "type": "DRUG",
+                    "name": "Placebo",
+                    "description": "Matching placebo oral tablets, once daily for 2 weeks",
+                    "armGroupLabels": [
+                      "Placebo"
+                    ]
+                  }
+                ]
+              },
+              "outcomesModule": {
+                "primaryOutcomes": [
+                  {
+                    "measure": "Proportion of Subjects With Venous Thromboembolism Events.",
+                    "description": "The primary efficacy endpoint was the proportion of subjects who experienced at least one of the thromboembolic events listed below during the period from the start of study treatment to the venography at the end of study treatment.\n\n* Lower extremity DVT confirmed by bilateral venography at the end of study treatment\n* Definite diagnosis of symptomatic PE\n* Symptomatic DVT confirmed before the venography at the end of study treatment The objectives were to verify the non-inferiority of edoxaban to enoxaparin with regard to prevention of VTE",
+                    "timeFrame": "2 weeks"
+                  }
+                ],
+                "secondaryOutcomes": [
+                  {
+                    "measure": "Incidence of Major Bleeding or Clinically Relevant Non-major Bleeding",
+                    "description": "Incidence of Major Bleeding or Clinically Relevant Non-major Bleeding. Related to the study drug",
+                    "timeFrame": "2 weeks"
+                  }
+                ]
+              },
+              "eligibilityModule": {
+                "eligibilityCriteria": "Inclusion Criteria:\n\n* Patients undergoing unilateral total knee arthroplasty\n\nExclusion Criteria:\n\n* risks of hemorrhage\n* thromboembolic risks\n* weight less than 40 kg\n* pregnant, suspect pregnancy, or subjects who want to become pregnant",
+                "healthyVolunteers": false,
+                "sex": "ALL",
+                "minimumAge": "20 Years",
+                "maximumAge": "84 Years",
+                "stdAges": [
+                  "ADULT",
+                  "OLDER_ADULT"
+                ]
+              },
+              "contactsLocationsModule": {
+                "overallOfficials": [
+                  {
+                    "name": "Takeshi Fuji, Director",
+                    "affiliation": "Osaka Koseinekin Hospital",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                  }
+                ],
+                "locations": [
+                  {
+                    "city": "Osaka",
+                    "country": "Japan",
+                    "geoPoint": {
+                      "lat": 34.69379,
+                      "lon": 135.50107
+                    }
+                  },
+                  {
+                    "city": "Tokyo",
+                    "country": "Japan",
+                    "geoPoint": {
+                      "lat": 35.6895,
+                      "lon": 139.69171
+                    }
+                  }
+                ]
+              },
+              "ipdSharingStatementModule": {
+                "ipdSharing": "YES",
+                "description": "De-identified individual participant data (IPD) and applicable supporting clinical trial documents may be available upon request at https://vivli.org/. In cases where clinical trial data and supporting documents are provided pursuant to our company policies and procedures, Daiichi Sankyo will continue to protect the privacy of our clinical trial participants. Details on data sharing criteria and the procedure for requesting access can be found at this web address: https://vivli.org/ourmember/daiichi-sankyo/",
+                "infoTypes": [
+                  "STUDY_PROTOCOL",
+                  "SAP",
+                  "CSR"
+                ],
+                "timeFrame": "Studies for which the medicine and indication have received European Union (EU) and United States (US), and/or Japan (JP) marketing approval on or after 01 January 2014 or by the US or EU or JP Health Authorities when regulatory submissions in all regions are not planned and after the primary study results have been accepted for publication.",
+                "accessCriteria": "Formal request from qualified scientific and medical researchers on IPD and clinical study documents from clinical trials supporting products submitted and licensed in the United States, the European Union and/or Japan from 01 January 2014 and beyond for the purpose of conducting legitimate research. This must be consistent with the principle of safeguarding study participants' privacy and consistent with provision of informed consent.",
+                "url": "https://vivli.org/ourmember/daiichi-sankyo/"
+              }
+            },
+            "resultsSection": {
+              "participantFlowModule": {
+                "groups": [
+                  {
+                    "id": "FG000",
+                    "title": "DU-176b 5 mg",
+                    "description": "DU-176b: DU-176b 5mg tablets oral, once daily for 2 weeks"
+                  },
+                  {
+                    "id": "FG001",
+                    "title": "DU-176b 15 mg",
+                    "description": "DU-176b: DU-176b 15mg tablets, oral once daily for 2 weeks"
+                  },
+                  {
+                    "id": "FG002",
+                    "title": "DU-176b 30 mg",
+                    "description": "DU-176b: DU-176b 30 mg tablets, oral, once daily for 2 weeks"
+                  },
+                  {
+                    "id": "FG003",
+                    "title": "DU-176b 60 mg",
+                    "description": "DU-176b: DU-176b 60 mg tablets, oral, once daily for 2 weeks"
+                  },
+                  {
+                    "id": "FG004",
+                    "title": "Placebo",
+                    "description": "Placebo: Matching placebo oral tablets, once daily for 2 weeks"
+                  }
+                ],
+                "periods": [
+                  {
+                    "title": "Overall Study",
+                    "milestones": [
+                      {
+                        "type": "STARTED",
+                        "achievements": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "105"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "106"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "104"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "106"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "102"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "COMPLETED",
+                        "achievements": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "95"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "100"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "101"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "100"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "96"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "NOT COMPLETED",
+                        "achievements": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "10"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "6"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "3"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "6"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "6"
+                          }
+                        ]
+                      }
+                    ],
+                    "dropWithdraws": [
+                      {
+                        "type": "Adverse Event",
+                        "reasons": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "5"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "3"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "2"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "4"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "2"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Lack of Efficacy",
+                        "reasons": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "1"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Lost to Follow-up",
+                        "reasons": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "1"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Protocol Violation",
+                        "reasons": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "2"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "0"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "1"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Withdrawal by Subject",
+                        "reasons": [
+                          {
+                            "groupId": "FG000",
+                            "numSubjects": "2"
+                          },
+                          {
+                            "groupId": "FG001",
+                            "numSubjects": "2"
+                          },
+                          {
+                            "groupId": "FG002",
+                            "numSubjects": "1"
+                          },
+                          {
+                            "groupId": "FG003",
+                            "numSubjects": "2"
+                          },
+                          {
+                            "groupId": "FG004",
+                            "numSubjects": "3"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "baselineCharacteristicsModule": {
+                "groups": [
+                  {
+                    "id": "BG000",
+                    "title": "DU-176b 5 mg",
+                    "description": "DU-176b: DU-176b 5mg tablets oral, once daily for 2 weeks"
+                  },
+                  {
+                    "id": "BG001",
+                    "title": "DU-176b 15 mg",
+                    "description": "DU-176b: DU-176b 15mg tablets, oral once daily for 2 weeks"
+                  },
+                  {
+                    "id": "BG002",
+                    "title": "DU-176b 30 mg",
+                    "description": "DU-176b: DU-176b 30 mg tablets, oral, once daily for 2 weeks"
+                  },
+                  {
+                    "id": "BG003",
+                    "title": "DU-176b 60 mg",
+                    "description": "DU-176b: DU-176b 60 mg tablets, oral, once daily for 2 weeks"
+                  },
+                  {
+                    "id": "BG004",
+                    "title": "Placebo",
+                    "description": "Placebo: Matching placebo oral tablets, once daily for 2 weeks"
+                  },
+                  {
+                    "id": "BG005",
+                    "title": "Total",
+                    "description": "Total of all reporting groups"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "BG000",
+                        "value": "88"
+                      },
+                      {
+                        "groupId": "BG001",
+                        "value": "92"
+                      },
+                      {
+                        "groupId": "BG002",
+                        "value": "88"
+                      },
+                      {
+                        "groupId": "BG003",
+                        "value": "88"
+                      },
+                      {
+                        "groupId": "BG004",
+                        "value": "89"
+                      },
+                      {
+                        "groupId": "BG005",
+                        "value": "445"
+                      }
+                    ]
+                  }
+                ],
+                "measures": [
+                  {
+                    "title": "Age, Continuous",
+                    "paramType": "MEAN",
+                    "dispersionType": "STANDARD_DEVIATION",
+                    "unitOfMeasure": "years",
+                    "classes": [
+                      {
+                        "categories": [
+                          {
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "70.2",
+                                "spread": "7.7"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "71.7",
+                                "spread": "7.0"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "71.6",
+                                "spread": "8.1"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "72.1",
+                                "spread": "7.0"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "70.3",
+                                "spread": "6.5"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "71.2",
+                                "spread": "7.3"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Sex: Female, Male",
+                    "paramType": "COUNT_OF_PARTICIPANTS",
+                    "unitOfMeasure": "Participants",
+                    "classes": [
+                      {
+                        "categories": [
+                          {
+                            "title": "Female",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "67"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "74"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "69"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "69"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "68"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "347"
+                              }
+                            ]
+                          },
+                          {
+                            "title": "Male",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "21"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "18"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "19"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "19"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "21"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "98"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Race (NIH/OMB)",
+                    "paramType": "COUNT_OF_PARTICIPANTS",
+                    "unitOfMeasure": "Participants",
+                    "classes": [
+                      {
+                        "categories": [
+                          {
+                            "title": "American Indian or Alaska Native",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "0"
+                              }
+                            ]
+                          },
+                          {
+                            "title": "Asian",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "88"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "92"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "88"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "88"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "89"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "445"
+                              }
+                            ]
+                          },
+                          {
+                            "title": "Native Hawaiian or Other Pacific Islander",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "0"
+                              }
+                            ]
+                          },
+                          {
+                            "title": "Black or African American",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "0"
+                              }
+                            ]
+                          },
+                          {
+                            "title": "White",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "0"
+                              }
+                            ]
+                          },
+                          {
+                            "title": "More than one race",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "0"
+                              }
+                            ]
+                          },
+                          {
+                            "title": "Unknown or Not Reported",
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "0"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "0"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Region of Enrollment",
+                    "paramType": "NUMBER",
+                    "unitOfMeasure": "participants",
+                    "classes": [
+                      {
+                        "title": "Japan",
+                        "categories": [
+                          {
+                            "measurements": [
+                              {
+                                "groupId": "BG000",
+                                "value": "88"
+                              },
+                              {
+                                "groupId": "BG001",
+                                "value": "92"
+                              },
+                              {
+                                "groupId": "BG002",
+                                "value": "88"
+                              },
+                              {
+                                "groupId": "BG003",
+                                "value": "88"
+                              },
+                              {
+                                "groupId": "BG004",
+                                "value": "89"
+                              },
+                              {
+                                "groupId": "BG005",
+                                "value": "445"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "outcomeMeasuresModule": {
+                "outcomeMeasures": [
+                  {
+                    "type": "PRIMARY",
+                    "title": "Proportion of Subjects With Venous Thromboembolism Events.",
+                    "description": "The primary efficacy endpoint was the proportion of subjects who experienced at least one of the thromboembolic events listed below during the period from the start of study treatment to the venography at the end of study treatment.\n\n* Lower extremity DVT confirmed by bilateral venography at the end of study treatment\n* Definite diagnosis of symptomatic PE\n* Symptomatic DVT confirmed before the venography at the end of study treatment The objectives were to verify the non-inferiority of edoxaban to enoxaparin with regard to prevention of VTE",
+                    "populationDescription": "The FAS was defined as all subjects enrolled in the study, but excluded those who had significant GCP violations, who had not received any doses of the study drug, or those who did not develop symptomatic DVT or PE, but in whom venography was not appropriately performed.",
+                    "reportingStatus": "POSTED",
+                    "paramType": "NUMBER",
+                    "dispersionType": "95% Confidence Interval",
+                    "unitOfMeasure": "percentage of participants",
+                    "timeFrame": "2 weeks",
+                    "groups": [
+                      {
+                        "id": "OG000",
+                        "title": "DU-176b 5 mg",
+                        "description": "DU-176b: DU-176b 5mg tablets oral, once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG001",
+                        "title": "DU-176b 15 mg",
+                        "description": "DU-176b: DU-176b 15mg tablets, oral once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG002",
+                        "title": "DU-176b 30 mg",
+                        "description": "DU-176b: DU-176b 30 mg tablets, oral, once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG003",
+                        "title": "DU-176b 60 mg",
+                        "description": "DU-176b: DU-176b 60 mg tablets, oral, once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG004",
+                        "title": "Placebo",
+                        "description": "Placebo: Matching placebo oral tablets, once daily for 2 weeks"
+                      }
+                    ],
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "88"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "92"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "88"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "88"
+                          },
+                          {
+                            "groupId": "OG004",
+                            "value": "89"
+                          }
+                        ]
+                      }
+                    ],
+                    "classes": [
+                      {
+                        "categories": [
+                          {
+                            "measurements": [
+                              {
+                                "groupId": "OG000",
+                                "value": "29.5",
+                                "lowerLimit": "20.0",
+                                "upperLimit": "39.1"
+                              },
+                              {
+                                "groupId": "OG001",
+                                "value": "26.1",
+                                "lowerLimit": "17.1",
+                                "upperLimit": "35.1"
+                              },
+                              {
+                                "groupId": "OG002",
+                                "value": "12.5",
+                                "lowerLimit": "5.6",
+                                "upperLimit": "19.4"
+                              },
+                              {
+                                "groupId": "OG003",
+                                "value": "9.1",
+                                "lowerLimit": "3.1",
+                                "upperLimit": "15.1"
+                              },
+                              {
+                                "groupId": "OG004",
+                                "value": "48.3",
+                                "lowerLimit": "37.9",
+                                "upperLimit": "58.7"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "analyses": [
+                      {
+                        "groupIds": [
+                          "OG000",
+                          "OG001",
+                          "OG002",
+                          "OG003",
+                          "OG004"
+                        ],
+                        "groupDescription": "As the primary analysis, the dose-response relationship in the incidence of thromboembolic event was verified using the Cochran-Armitage test.",
+                        "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+                        "pValue": "<0.001",
+                        "pValueComment": "Significance level for Cochran-Armitage test and comparison using Shirley-Williams method was set at one-sided, 0.025. For other tests, significance level and confidence coefficient were set at two-sided, 0.05 and 0.95, respectively, unless specified",
+                        "statisticalMethod": "Cochran-Armitage"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "SECONDARY",
+                    "title": "Incidence of Major Bleeding or Clinically Relevant Non-major Bleeding",
+                    "description": "Incidence of Major Bleeding or Clinically Relevant Non-major Bleeding. Related to the study drug",
+                    "populationDescription": "Safety Analysis Set is defined as subjects secondarily enrolled in study, but excluded those with significant GCP violations, did not receive any doses of study drug, or had no safety data after start of study treatment. Subjects with significant GCP violations, but received at least one dose of study drug, safety data were assessed individually",
+                    "reportingStatus": "POSTED",
+                    "paramType": "NUMBER",
+                    "dispersionType": "95% Confidence Interval",
+                    "unitOfMeasure": "percentage of subjects with bleeds",
+                    "timeFrame": "2 weeks",
+                    "groups": [
+                      {
+                        "id": "OG000",
+                        "title": "DU-176b 5 mg",
+                        "description": "DU-176b: DU-176b 5mg tablets oral, once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG001",
+                        "title": "DU-176b 15 mg",
+                        "description": "DU-176b: DU-176b 15mg tablets, oral once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG002",
+                        "title": "DU-176b 30 mg",
+                        "description": "DU-176b: DU-176b 30 mg tablets, oral, once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG003",
+                        "title": "DU-176b 60 mg",
+                        "description": "DU-176b: DU-176b 60 mg tablets, oral, once daily for 2 weeks"
+                      },
+                      {
+                        "id": "OG004",
+                        "title": "Placebo",
+                        "description": "Placebo: Matching placebo oral tablets, once daily for 2 weeks"
+                      }
+                    ],
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "103"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "106"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "103"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "106"
+                          },
+                          {
+                            "groupId": "OG004",
+                            "value": "102"
+                          }
+                        ]
+                      }
+                    ],
+                    "classes": [
+                      {
+                        "categories": [
+                          {
+                            "measurements": [
+                              {
+                                "groupId": "OG000",
+                                "value": "1.9",
+                                "lowerLimit": "0.5",
+                                "upperLimit": "6.8"
+                              },
+                              {
+                                "groupId": "OG001",
+                                "value": "3.8",
+                                "lowerLimit": "1.5",
+                                "upperLimit": "9.3"
+                              },
+                              {
+                                "groupId": "OG002",
+                                "value": "3.9",
+                                "lowerLimit": "1.5",
+                                "upperLimit": "9.6"
+                              },
+                              {
+                                "groupId": "OG003",
+                                "value": "4.7",
+                                "lowerLimit": "2.0",
+                                "upperLimit": "10.6"
+                              },
+                              {
+                                "groupId": "OG004",
+                                "value": "3.9",
+                                "lowerLimit": "1.5",
+                                "upperLimit": "9.7"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "adverseEventsModule": {
+                "frequencyThreshold": "5",
+                "eventGroups": [
+                  {
+                    "id": "EG000",
+                    "title": "DU-176b 5 mg",
+                    "description": "DU-176b: DU-176b 5mg tablets oral, once daily for 2 weeks",
+                    "seriousNumAffected": 2,
+                    "seriousNumAtRisk": 103,
+                    "otherNumAffected": 78,
+                    "otherNumAtRisk": 103
+                  },
+                  {
+                    "id": "EG001",
+                    "title": "DU-176b 15 mg",
+                    "description": "DU-176b: DU-176b 15mg tablets, oral once daily for 2 weeks",
+                    "seriousNumAffected": 1,
+                    "seriousNumAtRisk": 106,
+                    "otherNumAffected": 85,
+                    "otherNumAtRisk": 106
+                  },
+                  {
+                    "id": "EG002",
+                    "title": "DU-176b 30 mg",
+                    "description": "DU-176b: DU-176b 30 mg tablets, oral, once daily for 2 weeks",
+                    "seriousNumAffected": 1,
+                    "seriousNumAtRisk": 103,
+                    "otherNumAffected": 78,
+                    "otherNumAtRisk": 103
+                  },
+                  {
+                    "id": "EG003",
+                    "title": "DU-176b 60 mg",
+                    "description": "DU-176b: DU-176b 60 mg tablets, oral, once daily for 2 weeks",
+                    "seriousNumAffected": 3,
+                    "seriousNumAtRisk": 106,
+                    "otherNumAffected": 78,
+                    "otherNumAtRisk": 106
+                  },
+                  {
+                    "id": "EG004",
+                    "title": "Placebo",
+                    "description": "Placebo: Matching placebo oral tablets, once daily for 2 weeks",
+                    "seriousNumAffected": 5,
+                    "seriousNumAtRisk": 102,
+                    "otherNumAffected": 67,
+                    "otherNumAtRisk": 102
+                  }
+                ],
+                "seriousEvents": [
+                  {
+                    "term": "nasopharyngitis",
+                    "organSystem": "Infections and infestations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "vertigo positional",
+                    "organSystem": "Ear and labyrinth disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "myocardial infarction",
+                    "organSystem": "Cardiac disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "asthma",
+                    "organSystem": "Respiratory, thoracic and mediastinal disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "rectal haemorrhage",
+                    "organSystem": "Gastrointestinal disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "pyrexia",
+                    "organSystem": "General disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "platelet count decreased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "compression fracture",
+                    "organSystem": "Injury, poisoning and procedural complications",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "joint dislocation",
+                    "organSystem": "Injury, poisoning and procedural complications",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "spinal compression fracture",
+                    "organSystem": "Injury, poisoning and procedural complications",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "tibia fracture",
+                    "organSystem": "Injury, poisoning and procedural complications",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "ligament rupture",
+                    "organSystem": "Injury, poisoning and procedural complications",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  }
+                ],
+                "otherEvents": [
+                  {
+                    "term": "nasopharyngitis",
+                    "organSystem": "Infections and infestations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 9,
+                        "numAffected": 9,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 10,
+                        "numAffected": 10,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 8,
+                        "numAffected": 8,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "insomnia",
+                    "organSystem": "Psychiatric disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 9,
+                        "numAffected": 8,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "headache",
+                    "organSystem": "Nervous system disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "wound haemorrhage",
+                    "organSystem": "Vascular disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 3,
+                        "numAffected": 3,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 7,
+                        "numAffected": 6,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "constipation",
+                    "organSystem": "Gastrointestinal disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "diarrhea",
+                    "organSystem": "Gastrointestinal disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 3,
+                        "numAffected": 3,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 8,
+                        "numAffected": 7,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "dermatitis contact",
+                    "organSystem": "Skin and subcutaneous tissue disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "erythema",
+                    "organSystem": "Skin and subcutaneous tissue disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 3,
+                        "numAffected": 3,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 3,
+                        "numAffected": 3,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "heamorrhage subcutaneous",
+                    "organSystem": "Skin and subcutaneous tissue disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "pruritis",
+                    "organSystem": "Skin and subcutaneous tissue disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 6,
+                        "numAffected": 5,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 8,
+                        "numAffected": 6,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "haematuria",
+                    "organSystem": "Renal and urinary disorders",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 2,
+                        "numAffected": 2,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 1,
+                        "numAffected": 1,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 8,
+                        "numAffected": 7,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 0,
+                        "numAffected": 0,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "alanine aminotransferase increased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 9,
+                        "numAffected": 8,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "aspartate aminotransferase increased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 4,
+                        "numAffected": 4,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "blood lactate dehydrogenase increased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 13,
+                        "numAffected": 13,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 17,
+                        "numAffected": 17,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 16,
+                        "numAffected": 16,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 17,
+                        "numAffected": 16,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 12,
+                        "numAffected": 12,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "gamma glutamyltransferase increased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 10,
+                        "numAffected": 10,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 10,
+                        "numAffected": 10,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 11,
+                        "numAffected": 11,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "blood urine present",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 10,
+                        "numAffected": 9,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 10,
+                        "numAffected": 9,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 16,
+                        "numAffected": 15,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 7,
+                        "numAffected": 6,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "haemoglobin decreased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 3,
+                        "numAffected": 3,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 7,
+                        "numAffected": 7,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "platelet count increased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 9,
+                        "numAffected": 9,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 14,
+                        "numAffected": 14,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 12,
+                        "numAffected": 12,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 6,
+                        "numAffected": 6,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 5,
+                        "numAffected": 5,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  },
+                  {
+                    "term": "blood alkaline phosphate increased",
+                    "organSystem": "Investigations",
+                    "sourceVocabulary": "MedDRA/JV.12.0",
+                    "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                    "stats": [
+                      {
+                        "groupId": "EG000",
+                        "numEvents": 11,
+                        "numAffected": 11,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG001",
+                        "numEvents": 12,
+                        "numAffected": 12,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG002",
+                        "numEvents": 9,
+                        "numAffected": 9,
+                        "numAtRisk": 103
+                      },
+                      {
+                        "groupId": "EG003",
+                        "numEvents": 11,
+                        "numAffected": 11,
+                        "numAtRisk": 106
+                      },
+                      {
+                        "groupId": "EG004",
+                        "numEvents": 9,
+                        "numAffected": 9,
+                        "numAtRisk": 102
+                      }
+                    ]
+                  }
+                ]
+              },
+              "moreInfoModule": {
+                "certainAgreement": {
+                  "piSponsorEmployee": false,
+                  "restrictionType": "OTHER",
+                  "restrictiveAgreement": true,
+                  "otherDetails": "PI shall not publish the results of the Study at any time without the prior written approval of Sponsor."
+                },
+                "pointOfContact": {
+                  "title": "Kei Ibusuki, Associate Director",
+                  "organization": "Daiichi Sankyo.,LTD",
+                  "email": "ibusuki.kei.tx@daiichisankyo.co.jp",
+                  "phone": "81-90-2732-9505"
+                }
+              }
+            },
+            "derivedSection": {
+              "miscInfoModule": {
+                "versionHolder": "2026-10-02"
+              },
+              "conditionBrowseModule": {
+                "meshes": [
+                  {
+                    "id": "D054556",
+                    "term": "Venous Thromboembolism"
+                  },
+                  {
+                    "id": "D020246",
+                    "term": "Venous Thrombosis"
+                  }
+                ],
+                "ancestors": [
+                  {
+                    "id": "D013923",
+                    "term": "Thromboembolism"
+                  },
+                  {
+                    "id": "D016769",
+                    "term": "Embolism and Thrombosis"
+                  },
+                  {
+                    "id": "D014652",
+                    "term": "Vascular Diseases"
+                  },
+                  {
+                    "id": "D002318",
+                    "term": "Cardiovascular Diseases"
+                  },
+                  {
+                    "id": "D013927",
+                    "term": "Thrombosis"
+                  }
+                ]
+              },
+              "interventionBrowseModule": {
+                "meshes": [
+                  {
+                    "id": "C552171",
+                    "term": "edoxaban"
+                  }
+                ]
+              }
+            },
+            "hasResults": true
+          },
+          {
+            "protocolSection": {
+              "identificationModule": {
+                "nctId": "NCT00733486",
+                "orgStudyIdInfo": {
+                  "id": "CT 02/41"
+                },
+                "organization": {
+                  "fullName": "DePuy International",
+                  "class": "INDUSTRY"
+                },
+                "briefTitle": "A Study to Evaluate the Performance of the DePuy Low Contact Stress (LCS\u00ae) Complete Anterior-Posterior Glide (APG) Mobile Bearing Knee",
+                "officialTitle": "A Prospective, Non-Comparative Study to Evaluate the Performance of the DePuy Low Contact Stress (LCS\u00ae) Complete Anterior-Posterior Glide (AP Glide) Mobile Bearing Knee System in Primary Knee Arthroplasty"
+              },
+              "statusModule": {
+                "statusVerifiedDate": "2015-06",
+                "overallStatus": "TERMINATED",
+                "whyStopped": "The study was terminated at 2 years as investigators were unable to continue participation in the study.",
+                "expandedAccessInfo": {
+                  "hasExpandedAccess": false
+                },
+                "startDateStruct": {
+                  "date": "2005-08"
+                },
+                "primaryCompletionDateStruct": {
+                  "date": "2010-12",
+                  "type": "ACTUAL"
+                },
+                "completionDateStruct": {
+                  "date": "2011-02",
+                  "type": "ACTUAL"
+                },
+                "studyFirstSubmitDate": "2008-08-11",
+                "studyFirstSubmitQcDate": "2008-08-12",
+                "studyFirstPostDateStruct": {
+                  "date": "2008-08-13",
+                  "type": "ESTIMATED"
+                },
+                "lastUpdateSubmitDate": "2015-06-08",
+                "lastUpdatePostDateStruct": {
+                  "date": "2015-06-09",
+                  "type": "ESTIMATED"
+                }
+              },
+              "sponsorCollaboratorsModule": {
+                "responsibleParty": {
+                  "type": "SPONSOR"
+                },
+                "leadSponsor": {
+                  "name": "DePuy International",
+                  "class": "INDUSTRY"
+                }
+              },
+              "oversightModule": {
+                "oversightHasDmc": false
+              },
+              "descriptionModule": {
+                "briefSummary": "The primary objective of this investigation is to determine the survivorship of the LCS Complete AP Glide mobile bearing knee prosthesis at 5 years.\n\nThe secondary objectives of this investigation are to evaluate the clinical performance of the LCS\u00ae Complete AP Glide mobile bearing knee prosthesis and to determine its long-term survivorship."
+              },
+              "conditionsModule": {
+                "conditions": [
+                  "Osteoarthritis"
+                ],
+                "keywords": [
+                  "Arthroplasty, Replacement, Knee, LCS Complete APG (MeSH);"
+                ]
+              },
+              "designModule": {
+                "studyType": "INTERVENTIONAL",
+                "phases": [
+                  "PHASE4"
+                ],
+                "designInfo": {
+                  "allocation": "NON_RANDOMIZED",
+                  "interventionModel": "SINGLE_GROUP",
+                  "primaryPurpose": "TREATMENT",
+                  "maskingInfo": {
+                    "masking": "NONE"
+                  }
+                },
+                "enrollmentInfo": {
+                  "count": 233,
+                  "type": "ACTUAL"
+                }
+              },
+              "armsInterventionsModule": {
+                "armGroups": [
+                  {
+                    "label": "L.C.S. APG Knee Anterior Posterior Glide knee",
+                    "type": "OTHER",
+                    "description": "Orthopaedic implant for primary knee replacement",
+                    "interventionNames": [
+                      "Device: L.C.S. APG Knee Anterior Posterior Glide knee"
+                    ]
+                  }
+                ],
+                "interventions": [
+                  {
+                    "type": "DEVICE",
+                    "name": "L.C.S. APG Knee Anterior Posterior Glide knee",
+                    "description": "Orthopaedic implant for primary knee replacement",
+                    "armGroupLabels": [
+                      "L.C.S. APG Knee Anterior Posterior Glide knee"
+                    ]
+                  }
+                ]
+              },
+              "outcomesModule": {
+                "primaryOutcomes": [
+                  {
+                    "measure": "A survival analysis of the LCS\u00ae Complete AP Glide knee prosthesis at five years.",
+                    "timeFrame": "2 years"
+                  }
+                ],
+                "secondaryOutcomes": [
+                  {
+                    "measure": "Changes from baseline to 3 months post-operative assessment in:Clinical outcome (stability, pain, range of motion and function), using the American Knee Society Score.",
+                    "description": "American Knee Society (AKS) knee score is a 0-100 point score (where 100 indicates excellent knee condition) that evaluates the affected knee. The knee score is composed of Pain, Range of Motion, and Stability.\n\nAmerican Knee Society (AKS) function score is a 0-100 point score (where 100 indicates excellent knee function) that evaluates the affected knee",
+                    "timeFrame": "Pre-op to 3 months"
+                  },
+                  {
+                    "measure": "Change from baseline to 1 year post-operative assessment in clinical outcome (stability, pain, range of motion and function) using the American Society Score",
+                    "description": "American Knee Society (AKS) knee score is a 0-100 point score (where 100 indicates excellent knee condition) that evaluates the affected knee. The knee score is composed of Pain, Range of Motion, and Stability.\n\nAmerican Knee Society (AKS) function score is a 0-100 point score (where 100 indicates excellent knee function) that evaluates the affected knee",
+                    "timeFrame": "Pre-op to 1 year"
+                  },
+                  {
+                    "measure": "Change from baseline to 3 year post-operative assessment in clinical outcome (stability, pain, range of motion and function) using the American Society Score",
+                    "description": "American Knee Society (AKS) knee score is a 0-100 point score (where 100 indicates excellent knee condition) that evaluates the affected knee. The knee score is composed of Pain, Range of Motion, and Stability.\n\nAmerican Knee Society (AKS) function score is a 0-100 point score (where 100 indicates excellent knee function) that evaluates the affected knee",
+                    "timeFrame": "Pre-op to 3 years"
+                  },
+                  {
+                    "measure": "Incidence of anterior knee pain and patellar function using the Patellar Score",
+                    "description": "The Patellar Score is a 1 to 30 point outcome score (where 30 indicates the best outcome) that evaluates the patella of the affected knee. The patellar score is composed of Anterior Knee Pain (max 15 points), Quadriceps Strength (max 5 points), Ability to rise from chair (max 5 points), and Stair-climbing (max 5 points).",
+                    "timeFrame": "3 months post-operatively"
+                  },
+                  {
+                    "measure": "Incidence of anterior knee pain and patellar function using the Patellar Score",
+                    "description": "The Patellar Score is a 1 to 30 point outcome score (where 30 indicates the best outcome) that evaluates the patella of the affected knee. The patellar score is composed of Anterior Knee Pain (max 15 points), Quadriceps Strength (max 5 points), Ability to rise from chair (max 5 points), and Stair-climbing (max 5 points).",
+                    "timeFrame": "1 year post-operatively"
+                  },
+                  {
+                    "measure": "Incidence of anterior knee pain and patellar function using the Patellar Score",
+                    "description": "The Patellar Score is a 1 to 30 point outcome score (where 30 indicates the best outcome) that evaluates the patella of the affected knee. The patellar score is composed of Anterior Knee Pain (max 15 points), Quadriceps Strength (max 5 points), Ability to rise from chair (max 5 points), and Stair-climbing (max 5 points).",
+                    "timeFrame": "3 year post-operatively"
+                  },
+                  {
+                    "measure": "Patient derived outcome in terms of joint specific quality of life, as determined by the Oxford Knee Score",
+                    "description": "The Oxford Knee Score (OKS) is a 12 to 60 point patient reported outcome (PRO) score (where 12 indicates the best outcome) that evaluates the affected knee. The total score is composed of Pain and Function.",
+                    "timeFrame": "3 months post-operatively"
+                  },
+                  {
+                    "measure": "Patient derived outcome in terms of joint specific quality of life, as determined by the Oxford Knee Score",
+                    "description": "The Oxford Knee Score (OKS) is a 12 to 60 point patient reported outcome (PRO) score (where 12 indicates the best outcome) that evaluates the affected knee. The total score is composed of Pain and Function.",
+                    "timeFrame": "1 year post-operatively"
+                  },
+                  {
+                    "measure": "Patient derived outcome in terms of joint specific quality of life, as determined by the Oxford Knee Score",
+                    "description": "The Oxford Knee Score (OKS) is a 12 to 60 point patient reported outcome (PRO) score (where 12 indicates the best outcome) that evaluates the affected knee. The total score is composed of Pain and Function.",
+                    "timeFrame": "3 years post-operatively"
+                  },
+                  {
+                    "measure": "Patient derived outcome in terms of general quality of life, as determined by the SF-12",
+                    "description": "The 12-Item Short Form Health Survey (SF-12) is a patient reported outcome survey that evaluates functional health and well-being. The survey is converted into 2 summary measures that are scored from 0 to 100 (where 100 indicates the highest level of health) - the Physical Component Score (PCS-12) and Mental Component Score (MCS-12). At times, the survey is also displayed via 8 domain scales that are also scored from 0 to 100 (where 100 indicates the highest level of health) as follows: Physical Function, Role Physical, Bodily Pain, General Health, Mental Health, Role Emotional, Social Function, and Vitality.",
+                    "timeFrame": "3 months post-operatively"
+                  },
+                  {
+                    "measure": "Patient derived outcome in terms of general quality of life, as determined by the SF-12",
+                    "description": "The 12-Item Short Form Health Survey (SF-12) is a patient reported outcome survey that evaluates functional health and well-being. The survey is converted into 2 summary measures that are scored from 0 to 100 (where 100 indicates the highest level of health) - the Physical Component Score (PCS-12) and Mental Component Score (MCS-12). At times, the survey is also displayed via 8 domain scales that are also scored from 0 to 100 (where 100 indicates the highest level of health) as follows: Physical Function, Role Physical, Bodily Pain, General Health, Mental Health, Role Emotional, Social Function, and Vitality.",
+                    "timeFrame": "1 year post-operatively"
+                  },
+                  {
+                    "measure": "Patient derived outcome in terms of general quality of life, as determined by the SF-12",
+                    "description": "The 12-Item Short Form Health Survey (SF-12) is a patient reported outcome survey that evaluates functional health and well-being. The survey is converted into 2 summary measures that are scored from 0 to 100 (where 100 indicates the highest level of health) - the Physical Component Score (PCS-12) and Mental Component Score (MCS-12). At times, the survey is also displayed via 8 domain scales that are also scored from 0 to 100 (where 100 indicates the highest level of health) as follows: Physical Function, Role Physical, Bodily Pain, General Health, Mental Health, Role Emotional, Social Function, and Vitality.",
+                    "timeFrame": "3 years post-operatively"
+                  },
+                  {
+                    "measure": "A survival analysis of the LCS Complete AP Glide knee prosthesis",
+                    "description": "Kaplan Meier survivorship analysis estimates the proportion of a population that will survive past a certain time avoiding a certain event. In this study, the event is removal of any component for any reason, also known as revision for any reason. Survival estimates are provided when 40\\* devices are left still being followed.",
+                    "timeFrame": "1 year post-operatively"
+                  },
+                  {
+                    "measure": "A survival analysis of the LCS Complete AP Glide knee prosthesis",
+                    "description": "Kaplan Meier survivorship analysis estimates the proportion of a population that will survive past a certain time avoiding a certain event. In this study, the event is removal of any component for any reason, also known as revision for any reason. Survival estimates are provided when 40\\* devices are left still being followed.",
+                    "timeFrame": "3 years post-operatively"
+                  },
+                  {
+                    "measure": "Assessment of component alignment and positioning",
+                    "timeFrame": "3 months post-operatively"
+                  },
+                  {
+                    "measure": "Assessment of component alignment and positioning",
+                    "timeFrame": "1 year post-operatively"
+                  },
+                  {
+                    "measure": "Assessment of component alignment and positioning",
+                    "timeFrame": "3 years post-operatively"
+                  },
+                  {
+                    "measure": "Assessment of radiolucencies",
+                    "timeFrame": "3 months post-operatively"
+                  },
+                  {
+                    "measure": "Assessment of radiolucencies",
+                    "timeFrame": "1 year post-operatively"
+                  },
+                  {
+                    "measure": "Assessment of radiolucencies",
+                    "timeFrame": "3 years post-operatively"
+                  },
+                  {
+                    "measure": "Assessment of Patella Tilt and patellofemoral alignment",
+                    "timeFrame": "3 months, 1 yr, and 3 yrs"
+                  }
+                ]
+              },
+              "eligibilityModule": {
+                "eligibilityCriteria": "Inclusion Criteria:\n\n* Male or female subjects, aged between 45 and 85 years inclusive.\n* Subjects who are able to give voluntary, written informed consent to participate in this investigation and from whom consent has been obtained.\n* Subjects who present with any pathology that in the opinion of the clinical investigator requires a primary total knee arthroplasty.\n* Subjects who have an intact posterior cruciate ligament and well functioning medial and lateral collateral ligaments.\n* Subjects who in the opinion of the Clinical Investigator are considered to be suitable for treatment with the LCS Complete AP Glide mobile bearing knee system, according to the indications specified in the package insert leaflet.\n\nExclusion Criteria:\n\n* Subjects who, in the opinion of the Investigator, have an existing condition that would compromise their participation and follow-up in this study.\n* Revision of an existing knee implant (including unicompartmental implants).\n* Female subjects who are pregnant.\n* Subjects who are known drug or alcohol abusers or with psychological disorders that could affect follow-up care or treatment outcomes.\n* Subjects who have participated in a clinical study with an investigational product in the last month (30 days).\n* Subjects who are currently involved in any personal injury litigation claims.\n* Subjects involved in personal Medical-Legal claims.\n* Subjects with a known history of poor compliance to medical treatment.",
+                "healthyVolunteers": false,
+                "sex": "ALL",
+                "minimumAge": "45 Years",
+                "maximumAge": "85 Years",
+                "stdAges": [
+                  "ADULT",
+                  "OLDER_ADULT"
+                ]
+              },
+              "contactsLocationsModule": {
+                "locations": [
+                  {
+                    "facility": "Dong-A University medical centre",
+                    "city": "Pusan",
+                    "country": "South Korea",
+                    "geoPoint": {
+                      "lat": 36.3809,
+                      "lon": 128.3681
+                    }
+                  },
+                  {
+                    "facility": "Ewha Womans University Mokdong Hospital",
+                    "city": "Seoul",
+                    "country": "South Korea",
+                    "geoPoint": {
+                      "lat": 37.566,
+                      "lon": 126.9784
+                    }
+                  },
+                  {
+                    "facility": "Severance Hospital, Yongsei University College of Medicine",
+                    "city": "Seoul",
+                    "country": "South Korea",
+                    "geoPoint": {
+                      "lat": 37.566,
+                      "lon": 126.9784
+                    }
+                  }
+                ]
+              }
+            },
+            "derivedSection": {
+              "miscInfoModule": {
+                "versionHolder": "2026-10-02"
+              },
+              "conditionBrowseModule": {
+                "meshes": [
+                  {
+                    "id": "D010003",
+                    "term": "Osteoarthritis"
+                  }
+                ],
+                "ancestors": [
+                  {
+                    "id": "D001168",
+                    "term": "Arthritis"
+                  },
+                  {
+                    "id": "D007592",
+                    "term": "Joint Diseases"
+                  },
+                  {
+                    "id": "D009140",
+                    "term": "Musculoskeletal Diseases"
+                  },
+                  {
+                    "id": "D012216",
+                    "term": "Rheumatic Diseases"
+                  }
+                ]
+              }
+            },
+            "hasResults": false
+          }
+        ],
+        "nextPageToken": "ZVNj7o2Elu8o3lpwTcito62tmpOQJJxqZPSm0A"
+      },
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.term=knee+replacement&pageSize=3&countTotal=true",
+      "totalCount": 4068,
+      "claim": "By law sponsors must pre-register (FDAAA 2007); ICTRP aggregates 18 registries",
+      "verdict": "PASS registry live + totalCount>0"
+    },
+    "portals": {
+      "who": {
+        "ok": true,
+        "status": 200,
+        "latency_s": 10.038,
+        "url": "https://www.who.int/tools/clinical-trials-registry-platform",
+        "verdict": "PASS"
+      },
+      "cochrane": {
+        "ok": true,
+        "error": "HTTP Error 429: Too Many Requests",
+        "http_code": 429,
+        "latency_s": 5.458,
+        "url": "https://www.cochranelibrary.com/",
+        "verdict": "ALIVE but bot-walled (expected for large publishers)"
+      },
+      "nature": {
+        "ok": true,
+        "status": 200,
+        "latency_s": 35.887,
+        "url": "https://www.nature.com/",
+        "verdict": "PASS"
+      },
+      "medlineplus": {
+        "ok": true,
+        "status": 200,
+        "latency_s": 2.282,
+        "url": "https://medlineplus.gov/",
+        "verdict": "PASS"
+      },
+      "nih": {
+        "ok": true,
+        "status": 200,
+        "latency_s": 7.582,
+        "url": "https://www.nih.gov/",
+        "verdict": "PASS"
+      },
+      "pubmed_web": {
+        "ok": true,
+        "status": 200,
+        "latency_s": 2.862,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "verdict": "PASS"
+      }
+    }
+  },
+  "hidden_pattern_inversion": [
+    {
+      "site": "NIH",
+      "evidence": "A1",
+      "traffic_rank": 1,
+      "note": "rare alignment: top trust + top traffic"
+    },
+    {
+      "site": "PubMed",
+      "evidence": "A0",
+      "traffic_rank": 11,
+      "note": "highest gatekeeping, modest portal traffic vs nih.gov umbrella"
+    },
+    {
+      "site": "Cochrane",
+      "evidence": "A0",
+      "traffic_rank": 12,
+      "note": "ultimate decision-maker, low traffic \u2014 trust/traffic inversion"
+    },
+    {
+      "site": "ClinicalTrials.gov",
+      "evidence": "A1-legal",
+      "traffic_rank": 13,
+      "note": "legal transparency, registry UX not portal traffic"
+    },
+    {
+      "site": "WebMD/Healthline",
+      "evidence": "C1-commercial",
+      "traffic_rank": 4,
+      "note": "high traffic, lowest evidence grade \u2014 inverse pattern"
+    },
+    {
+      "site": "WHO",
+      "evidence": "A1",
+      "traffic_rank": 9,
+      "note": "peak authority, only 10.58M visits Jun2026 \u2014 crisis-spike pattern"
+    }
+  ],
+  "finished_utc": "2026-10-04T09:08:37.352691+00:00",
+  "summary": {
+    "core_api_pass": "3/4",
+    "portals_alive": "6/6",
+    "overall": "VERIFIED",
+    "method": "One-at-a-time live fetch, no keys, polite UA, 20s timeout (2026 best practice to avoid 429)"
+  }
+}

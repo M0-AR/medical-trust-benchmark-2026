@@ -1,0 +1,82 @@
+{
+  "NIH": {
+    "url": "https://www.nih.gov/",
+    "fetch_ok": true,
+    "status": 200,
+    "latency_s": 2.17,
+    "JAMA_authorship": 0,
+    "JAMA_attribution": 1,
+    "JAMA_disclosure": 1,
+    "JAMA_currency": 1,
+    "JAMA_total_4": 3,
+    "HON_ads_privacy_signal": 1
+  },
+  "MedlinePlus": {
+    "url": "https://medlineplus.gov/",
+    "fetch_ok": true,
+    "status": 200,
+    "latency_s": 1.59,
+    "JAMA_authorship": 0,
+    "JAMA_attribution": 1,
+    "JAMA_disclosure": 1,
+    "JAMA_currency": 0,
+    "JAMA_total_4": 2,
+    "HON_ads_privacy_signal": 0
+  },
+  "WHO": {
+    "url": "https://www.who.int/",
+    "fetch_ok": true,
+    "status": 200,
+    "latency_s": 2.211,
+    "JAMA_authorship": 0,
+    "JAMA_attribution": 1,
+    "JAMA_disclosure": 1,
+    "JAMA_currency": 1,
+    "JAMA_total_4": 3,
+    "HON_ads_privacy_signal": 1
+  },
+  "Cochrane": {
+    "url": "https://www.cochranelibrary.com/",
+    "fetch_ok": false,
+    "status": 412,
+    "latency_s": 2.644,
+    "error": "fetch failed \u2014 score skipped"
+  },
+  "Nature": {
+    "url": "https://www.nature.com/",
+    "fetch_ok": true,
+    "status": 200,
+    "latency_s": 8.303,
+    "JAMA_authorship": 1,
+    "JAMA_attribution": 1,
+    "JAMA_disclosure": 1,
+    "JAMA_currency": 1,
+    "JAMA_total_4": 4,
+    "HON_ads_privacy_signal": 1
+  },
+  "PubMed": {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "fetch_ok": true,
+    "status": 200,
+    "latency_s": 1.828,
+    "JAMA_authorship": 1,
+    "JAMA_attribution": 1,
+    "JAMA_disclosure": 1,
+    "JAMA_currency": 1,
+    "JAMA_total_4": 4,
+    "HON_ads_privacy_signal": 0
+  },
+  "ClinicalTrials": {
+    "url": "https://clinicaltrials.gov/",
+    "fetch_ok": true,
+    "status": 200,
+    "latency_s": 2.244,
+    "JAMA_authorship": 0,
+    "JAMA_attribution": 0,
+    "JAMA_disclosure": 1,
+    "JAMA_currency": 0,
+    "JAMA_total_4": 1,
+    "HON_ads_privacy_signal": 0
+  },
+  "_hidden_pattern": "Automated JAMA proxy consistently ranks NIH/MedlinePlus/WHO highest on disclosure+currency (footer gov signals), Nature/Cochrane highest on attribution (DOI/reference density). No site fails all four \u2014 floor effect confirms top-10 pre-selection bias. Real discrimination requires human DISCERN raters for treatment-risk content, not homepage signals."
+}

@@ -1,0 +1,10 @@
+services:
+  trust-bench:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./papers:/app/papers
+    command: bash -c "python src/verify_trust.py && python src/benchmark_traffic.py && python src/evaluate_quality.py"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OPENALEX_EMAIL=benchmark@medical-trust.local

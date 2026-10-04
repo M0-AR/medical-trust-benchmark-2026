@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical Trust Benchmark 2026 — Live Preview</title>
+<meta name="description" content="Which medical websites does the world actually trust? Live-verified benchmark of PubMed, WHO, Cochrane, Nature and more.">
+<style>
+:root{--bg:#f8fafc;--surface:#ffffff;--surface2:#f1f5f9;--fg:#0f172a;--muted:#64748b;--border:#e2e8f0;--accent:#0e7490;--accent2:#0d9488;--amber:#d97706;--green:#15803d;--red:#dc2626;--radius:16px;--shadow:0 8px 32px rgba(2,6,23,.08)}
+[data-theme="dark"]{--bg:#0b1220;--surface:#111c33;--surface2:#0f1a30;--fg:#e8eef7;--muted:#93a4bd;--border:#22345a;--accent:#22d3ee;--accent2:#2dd4bf;--amber:#fbbf24;--green:#4ade80;--red:#f87171;--shadow:0 8px 32px rgba(0,0,0,.45)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;min-height:100vh}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 24px 120px}
+.nav{position:sticky;top:12px;z-index:20;display:flex;align-items:center;gap:12px;background:color-mix(in srgb,var(--surface) 82%,transparent);backdrop-filter:blur(12px);border:1.5px solid var(--border);border-radius:999px;padding:10px 16px;box-shadow:var(--shadow)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em}
+.dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent)}
+.nav a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600}
+.nav a:hover{color:var(--fg)}
+.nav .sp{flex:1}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--border);background:var(--surface);color:var(--fg);border-radius:999px;padding:9px 16px;font-weight:700;font-size:13px;text-decoration:none;cursor:pointer}
+.btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:transparent;color:#04222b}
+[data-theme="dark"] .btn.primary{color:#04222b}
+.hero{margin:26px 0 18px;background:linear-gradient(135deg,rgba(14,116,144,.12),rgba(13,148,136,.12));border:1.5px solid var(--border);border-radius:24px;padding:32px;position:relative;overflow:hidden}
+.hero h1{margin:.2em 0;font-size:clamp(28px,4.4vw,46px);line-height:1.05;letter-spacing:-.03em}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border:1px solid var(--border);padding:6px 12px;border-radius:999px}
+.lede{font-size:17px;color:var(--muted);max-width:70ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:6px 12px;color:var(--muted)}
+.chip b{color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:190px 250px 210px auto;gap:14px;margin-top:16px}
+.card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);overflow:hidden;min-width:0;min-height:0;display:flex;flex-direction:column}
+.card h3{margin:0 0 4px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card .big{font-size:34px;font-weight:800;letter-spacing:-.03em}
+.card .sub{font-size:13px;color:var(--muted)}
+.span2{grid-column:span 2}.span4{grid-column:span 4}
+.bar{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:12px}
+.bar .name{width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted);font-family:ui-monospace,Menlo,Consolas,monospace}
+.track{flex:1;height:10px;background:var(--surface2);border:1px solid var(--border);border-radius:999px;position:relative;overflow:hidden}
+.fill{position:absolute;left:0;bottom:0;top:0;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.bar .v{width:64px;text-align:right;font-weight:700;font-family:ui-monospace,Menlo,Consolas,monospace}
+.kv{display:grid;grid-template-columns:1fr auto;gap:6px 12px;font-size:13px;margin-top:8px}
+.kv code{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:2px 8px}
+.ok{color:var(--green);font-weight:800}.warn{color:var(--amber);font-weight:800}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border)}
+th{color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+ol.steps{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:14px}
+pre{background:#0b1220;color:#d7f9ff;border-radius:12px;padding:14px;overflow:auto;font-size:12.5px;border:1px solid var(--border)}
+[data-theme="light"] pre{background:#0b1220}
+.floating-bar{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:100;display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--surface);border:1.5px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,.18)}
+.mode-btn{background:transparent;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:8px 16px;border-radius:999px;font-size:12px;font-weight:700;color:var(--muted)}
+.mode-btn.active{background:var(--surface2);color:var(--fg)}
+.footer{margin-top:18px;color:var(--muted);font-size:12px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}.span2,.span4{grid-column:span 2}.wrap{padding:18px 14px 120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="nav"><div class="brand"><span class="dot"></span> Medical Trust Benchmark 2026</div><span class="sp"></span><a href="#results">Results</a><a href="#traffic">Traffic</a><a href="#quality">Quality</a><a href="#run">Run it</a><a class="btn primary" href="#run">Docker: 1 command</a></div>
+
+<div class="hero">
+<span class="eyebrow">Live-verified · No API keys · MIT</span>
+<h1>Which medical websites does the world actually trust?</h1>
+<p class="lede">We tested the famous “top-10 trusted” claim against <b>live public data</b>: real PubMed, Crossref and ClinicalTrials.gov answers, real traffic tables, and validated quality checks. Bottom line: <b>trust ≠ traffic</b>. The strictest sources (PubMed, Cochrane) have the <i>lowest</i> traffic; the most-visited commercial sites have the <i>weakest</i> evidence grade.</p>
+<div class="chips"><span class="chip">PubMed probe <b>68,035</b> records · 2.38s</span><span class="chip">Crossref <b>3,411,870</b> · 7.83s</span><span class="chip">Trials <b>4,068</b> · 4.74s</span><span class="chip">Portals <b>6/6 alive</b></span><span class="chip">HHI <b>1,650</b> · NIH <b>31.7%</b></span></div>
+</div>
+
+<div class="grid" id="results">
+<div class="card"><h3>PubMed · live</h3><div class="big ok">68,035</div><div class="sub">surgery + randomized-trial probe via public E-utilities. Umbrella holds &gt;40M citations (U.S. National Library of Medicine).</div></div>
+<div class="card"><h3>Crossref · live</h3><div class="big">3,411,870</div><div class="sub">same probe via open Crossref API. Independent confirmation the literature is non-empty and huge.</div></div>
+<div class="card"><h3>ClinicalTrials.gov · live</h3><div class="big">4,068</div><div class="sub">knee-replacement studies via v2 API. Pre-registration law makes hiding trials hard.</div></div>
+<div class="card"><h3>Portals alive</h3><div class="big ok">6 / 6</div><div class="sub">WHO · Cochrane (bot-wall = alive) · Nature · MedlinePlus · NIH · PubMed web. All reachable Oct-2026.</div></div>
+
+<div class="card span2" id="traffic"><h3>Traffic concentration — top-10 ≈ 567M visits/mo (Aug-2026 public tables)</h3>
+<div class="bar"><span class="name">nih.gov</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="v">180.0M</span></div>
+<div class="bar"><span class="name">clevelandclinic.org</span><div class="track"><div class="fill" style="width:48.6%"></div></div><span class="v">87.5M</span></div>
+<div class="bar"><span class="name">mayoclinic.org</span><div class="track"><div class="fill" style="width:36.9%"></div></div><span class="v">66.4M</span></div>
+<div class="bar"><span class="name">healthline.com</span><div class="track"><div class="fill" style="width:32%"></div></div><span class="v">57.7M</span></div>
+<div class="bar"><span class="name">harvard.edu</span><div class="track"><div class="fill" style="width:20.2%"></div></div><span class="v">36.3M</span></div>
+<div class="sub" style="margin-top:8px">NIH alone = <b>31.7%</b> of top-10 · Top-3 = <b>58.9%</b> · HHI <b>1,650</b> (moderately concentrated). Full table + engagement contrast in README + <code>data/traffic_benchmark.json</code>.</div>
+</div>
+
+<div class="card span2" id="quality"><h3>Quality signals — automated JAMA check (homepage hygiene proxy)</h3>
+<table><tr><th>Site</th><th>JAMA /4</th><th>Note</th></tr>
+<tr><td>Nature</td><td><b>4/4</b></td><td>DOI/reference density</td></tr>
+<tr><td>PubMed</td><td><b>4/4</b></td><td>NLM curation signals</td></tr>
+<tr><td>NIH / WHO</td><td><b>3/4</b></td><td>gov disclosure + currency</td></tr>
+<tr><td>ClinicalTrials</td><td><b>1/4</b></td><td>registry UX, not prose — expected</td></tr></table>
+<div class="sub">Homepage regex ≠ article truth. Real DISCERN needs human raters — listed as next step. See <code>data/quality_scores.json</code>.</div>
+</div>
+
+<div class="card"><h3>Hidden pattern ①</h3><div class="sub"><b>Trust–traffic inversion.</b> Strictest gatekeepers = quietest portals. Most-visited = weakest evidence grade. Never use traffic as trust.</div></div>
+<div class="card"><h3>Hidden pattern ②</h3><div class="sub"><b>Workflow vs lookup.</b> Appointment portals: 7.48 pages/visit. Symptom lookup: 1.55 pages, 78% bounce. Same category, opposite jobs.</div></div>
+<div class="card"><h3>Hidden pattern ③</h3><div class="sub"><b>Crisis-spike vs evergreen.</b> WHO −38.6% in a calm month; NIH flat at ~170M via PubMed infrastructure. Events move WHO; infrastructure sustains NIH.</div></div>
+<div class="card"><h3>Hidden pattern ④</h3><div class="sub"><b>Taxonomy flips winner.</b> Overall #1 = NIH; Medicine-subcategory #1 = Cleveland Clinic. Always cite the category with the rank.</div></div>
+
+<div class="card span4" id="run"><h3>Run the whole benchmark yourself — 1 command, no keys</h3>
+<pre>git clone &lt;this-repo&gt; medical-trust-benchmark-2026
+cd medical-trust-benchmark-2026
+docker compose up --build
+# without docker:
+pip install -r requirements.txt
+python src/verify_trust.py &amp;&amp; python src/benchmark_traffic.py &amp;&amp; python src/evaluate_quality.py</pre>
+<div class="kv"><span>Outputs: <code>data/live_results.json</code> · <code>data/traffic_benchmark.json</code> · <code>data/quality_scores.json</code></span><span class="ok">VERIFIED 2026-10-04</span></div>
+<ol class="steps">
+<li><b>New here?</b> Start with the README 🌱 Beginner Guide — 5 minutes from zero to your first live PubMed query.</li>
+<li><b>Patient?</b> Begin at MedlinePlus / NHS / WHO, then verify any claim in PubMed or Cochrane.</li>
+<li><b>Clinician / student?</b> PubMed → Cochrane (“does it work?”) → ClinicalTrials.gov + WHO ICTRP (“what was tried?”) → UpToDate at bedside.</li>
+<li><b>Engineer?</b> Use ClinicalTrials.gov protocols + device journals + traffic tables for build-vs-buy decisions.</li>
+</ol>
+</div>
+</div>
+
+<div class="footer">Sources: U.S. National Library of Medicine (PubMed/MEDLINE, &gt;40M citations) · WHO ICTRP (18 registries) · ClinicalTrials.gov v2 · Crossref/OpenAlex · Semrush Aug-2026 via ExplodingTopics · Similarweb Medicine Jun-2026 · OneLittleWeb Jun-2026 · Clarivate / Elsevier curation rules. Informational only — not medical advice. MIT License. See README for full methods, tables, limitations and PhD extensions.</div>
+</div>
+
+<div class="floating-bar"><button class="mode-btn active" data-mode="light">☀ Light</button><button class="mode-btn" data-mode="dark">☾ Dark</button></div>
+<script>
+const root=document.documentElement,btns=document.querySelectorAll('.mode-btn');
+function set(t){root.setAttribute('data-theme',t);btns.forEach(b=>b.classList.toggle('active',b.dataset.mode===t));try{localStorage.setItem('mtb-theme',t)}catch(e){}}
+btns.forEach(b=>b.addEventListener('click',()=>set(b.dataset.mode)));
+try{const s=localStorage.getItem('mtb-theme');if(s)set(s)}catch(e){}
+</script>
+</body>
+</html>

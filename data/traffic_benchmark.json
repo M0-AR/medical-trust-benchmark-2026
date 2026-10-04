@@ -1,0 +1,82 @@
+{
+  "source_tables": "Semrush Aug2026 + OneLittleWeb Jun2026 + Similarweb Medicine Jun2026 (see README citations)",
+  "top10_total_M": 567.1,
+  "rows": [
+    {
+      "site": "nih.gov",
+      "visits_M": 180.0,
+      "share_pct": 31.74
+    },
+    {
+      "site": "clevelandclinic.org",
+      "visits_M": 87.5,
+      "share_pct": 15.43
+    },
+    {
+      "site": "mayoclinic.org",
+      "visits_M": 66.4,
+      "share_pct": 11.71
+    },
+    {
+      "site": "healthline.com",
+      "visits_M": 57.7,
+      "share_pct": 10.17
+    },
+    {
+      "site": "harvard.edu",
+      "visits_M": 36.3,
+      "share_pct": 6.4
+    },
+    {
+      "site": "nhs.uk",
+      "visits_M": 31.2,
+      "share_pct": 5.5
+    },
+    {
+      "site": "webmd.com",
+      "visits_M": 30.4,
+      "share_pct": 5.36
+    },
+    {
+      "site": "doctolib.fr",
+      "visits_M": 28.9,
+      "share_pct": 5.1
+    },
+    {
+      "site": "athenahealth.com",
+      "visits_M": 28.7,
+      "share_pct": 5.06
+    },
+    {
+      "site": "ameli.fr",
+      "visits_M": 20.0,
+      "share_pct": 3.53
+    }
+  ],
+  "HHI_10k": 1650.1,
+  "engagement": {
+    "athenahealth.com": {
+      "pages": 7.4772,
+      "bounce": 26.56
+    },
+    "nih.gov": {
+      "pages": 3.3167,
+      "bounce": 57.73
+    },
+    "webmd.com": {
+      "pages": 1.5546,
+      "bounce": 78.09
+    },
+    "clevelandclinic.org": {
+      "pages": 1.6557,
+      "bounce": 75.85
+    }
+  },
+  "hidden_patterns": [
+    "PATTERN-1 Concentration: Top-1 (nih.gov) holds ~31.7% of top-10 traffic; top-3 hold ~58.9%. HHI=1650 (moderately concentrated). Trust is centralized in one .gov umbrella.",
+    "PATTERN-2 Engagement inversion: athenahealth 7.48 pages/visit + 26.6% bounce (portal workflow) vs webmd 1.55 pages + 78.1% bounce (one-and-done symptom lookup). High trust != high engagement depth.",
+    "PATTERN-3 Crisis-spike vs evergreen: WHO only 10.58M Jun2026 (-38.6% MoM) while nih.gov evergreen 168-180M. WHO spikes in pandemics; NIH sustains via PubMed/PMC infrastructure.",
+    "PATTERN-4 Medicine-subcategory flip: Similarweb Medicine Jun2026 ranks clevelandclinic #1, mayoclinic #2 (not nih.gov) \u2014 category definition changes winner. Always report taxonomy with rank.",
+    "PATTERN-5 Commercial efficiency: Healthline+WebMD ~88M combined \u2248 Cleveland Clinic alone; ad-supported C-grade evidence matches nonprofit B-grade traffic \u2014 monetization compensates trust deficit with SEO."
+  ]
+}

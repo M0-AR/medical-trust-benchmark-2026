@@ -1,0 +1,19 @@
+rank,site,url,category,monthly_visits_aug2026_M,source,trust_role,evidence_grade,indexing_gatekeeper,ads,noncommercial
+1,NIH (incl PubMed/MedlinePlus),https://www.nih.gov,Healthcare Portal,180.0,Semrush Aug2026 via ExplodingTopics,Ultimate authority + trial registry host,A1 government,NLM LSTRC review,0,yes
+2,ClevelandClinic,https://www.clevelandclinic.org,Medicine,87.5,Semrush Aug2026,Patient education hospital library,B2 expert-reviewed,None (hospital editorial),0,yes-hospital-nonprofit
+3,MayoClinic,https://www.mayoclinic.org,Medicine,66.4,Semrush Aug2026,Patient-first condition guides,B2 expert-reviewed,None (physician review),0,yes-nonprofit
+4,Healthline,https://www.healthline.com,Healthcare,57.7,Semrush Aug2026,Commercial wellness (reviewed),C1 commercial-medical-review,Medical review board,yes,no
+5,Harvard (harvard.edu),https://www.harvard.edu,Academic,36.3,Semrush Aug2026,Academic publisher,A2 university,Peer review,0,yes
+6,NHS,https://www.nhs.uk,Healthcare,31.2,Semrush Aug2026,National health service,A1 government,UK gov editorial,0,yes
+7,WebMD,https://www.webmd.com,Healthcare,30.4,Semrush Aug2026 + 28.78M OneLittleWeb Jun2026,Symptom checker hub,C1 commercial,Editorial board,yes,no
+8,Drugs.com,https://www.drugs.com,Healthcare,22.76,OneLittleWeb Jun2026,Drug reference independent,B1 pharmacist-reviewed,Independent editorial,yes,no-but-independent
+9,WHO,https://www.who.int,Healthcare Authority,10.58,Semrush Jun2026 + OneLittleWeb,Global policy + ICTRP umbrella,A1 intergovernmental,UN member-state review,0,yes
+10,MedlinePlus,https://medlineplus.gov,Consumer Health,17.39,OneLittleWeb Jun2026,NLM consumer portal (no ads),A1 government-curated,NLM curation,0,yes
+11,PubMed (subdomain pubmed.ncbi.nlm.nih.gov),https://pubmed.ncbi.nlm.nih.gov,Literature Index,~572 (HypeStat est monthly) / 25.6M daily uniques Sitetrends,Gold-standard index engine,A0 strict gatekeeper,LSTRC + automated indexing + human curation,0,yes
+12,Cochrane Library,https://www.cochranelibrary.com,Systematic Reviews,low-traffic-high-trust,Web of Science/Scopus indexed,Ultimate decision maker (systematic reviews),A0 independent-nonprofit 130+ countries,Cochrane editorial + GRADE,0,yes-nonprofit
+13,ClinicalTrials.gov,https://clinicaltrials.gov,Trial Registry,registry (not portal traffic),NIH registry,Transparency enforcer (pre-registration by law),A1 legal-mandate,FDAAA 2007 + NIH curation,0,yes
+14,Google Scholar,https://scholar.google.com,Academic Index,cross-disciplinary largest,Google Scholar,Discovery + citation tracking,B0 algorithmic (no gatekeep),None (indexes all incl predatory),0,no-but-academic
+15,Web of Science,https://www.webofscience.com,Citation Index,subscription (Clarivate MJL),Impact Factor benchmark,A0 28 criteria (24 quality + 4 impact),Clarivate editorial,0,no-subscription
+16,Scopus,https://www.scopus.com,Citation Index,subscription (Elsevier),Predatory filter + CiteScore/SJR,A0 independent curation,Elsevier CSAB review,0,no-subscription
+17,Nature,https://www.nature.com,Journal,prestige >90% rejection,Nature Portfolio,Breakthrough validator,A0 Nature peer review,Nature editors + external,0,no-publisher
+18,UpToDate,https://www.uptodate.com,Clinical Decision Support,bedside subscription,Wolters Kluwer,Bedside consensus (7400+ physicians),A1 expert-authored continuous,Wolters Kluwer editorial,0,no-subscription
